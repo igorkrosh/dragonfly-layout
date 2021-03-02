@@ -7,6 +7,55 @@ html(lang="ru")
         title Document
         include pug/head.pug
     body
-        h1 Hi from PUG! 
-
+        include pug/navbar.pug
+        section.first__scroll
+            .container.row
+                .col__text
+                    .text__wrapper
+                        h1 
+                            |Курьерская служба доставки
+                            span 
+                                | от 
+                                b 200 р.
+                        p Экспресс-доставка от двери до двери
+                    form.form__wrapper
+                        .form__group
+                            input(type="text" placeholder="Адрес отправки")
+                        .form__group
+                            input(type="text" placeholder="Адрес доставки")
+                        .radio__wrapper
+                            label.radio Пешком
+                                input(type="radio" name="delivery_type")
+                                span.checkmark
+                            label.radio На автомобиле
+                                input(type="radio" name="delivery_type")
+                                span.checkmark
+                        button.btn.orange Расчитать стоимость
+                    .info__wrapper
+                        .info
+                            .image 
+                                img(src="assets/images/icons/info_time.png", alt="")
+                            .text
+                                span 
+                                    |среднее время подачи 
+                                    br
+                                    |курьера 45 минут
+                        .info
+                            .image 
+                                img(src="assets/images/icons/info_count.png", alt="")
+                            .text
+                                span 
+                                    |450 активных 
+                                    br
+                                    |курьеров
+                        .info
+                            .image 
+                                img(src="assets/images/icons/info_delivery.png", alt="")
+                            .text
+                                span 
+                                    |доставим во время 
+                                    br
+                                    |или доставка за наш счёт
+                .col__img
+                    img(src="assets/images/bg/курьер.png", alt="")
         include pug/scripts.pug

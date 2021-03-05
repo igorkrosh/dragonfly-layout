@@ -4,6 +4,22 @@
     {
         max-width: 1024px;
     }
+
+    header.navbar .container .wrapper
+    {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    section.app .phone
+    {
+        right: 0;
+    }
+
+    section.reviews .reviews__wrapper .review__item
+    {
+        width: 300px;
+    }
 }
 
 @media(max-width: 1024px)
@@ -34,6 +50,6 @@
 {
     .container
     {
-        max-width: 320px;
+        max-width: 100%;
     }
 }

@@ -51,7 +51,7 @@ button, input
     
 }
 
-header.navbar
+.navbar
 {
     padding: 5px 0;
     .container
@@ -646,4 +646,56 @@ footer
         border-bottom: 2px solid #eeeeee;
     }
 }
+
+.menu.desktop
+{
+    padding: 10px 0;
+    background-color: #1f4b88;
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+section.contacts
+{
+    .title
+    {
+        padding: 50px 0;
+    }
+    .contacts__wrapper
+    {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 40px;
+
+        .contact__item
+        {
+            flex-direction: column;
+
+            img
+            {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+section.ymap
+{
+    height: 400px;
+}
+
+section.contacts__info
+{
+    padding: 40px 0;
+    .container
+    {
+        display: flex;
+        justify-content: space-evenly
+    }
+}
+
 @import 'responce';

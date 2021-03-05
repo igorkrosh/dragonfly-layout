@@ -1,8 +1,10 @@
-$(document).on('ready', Core);
+$(document).ready(Core);
 
 function Core()
 {
     SetTabSwitcher();
+    console.log('asd')
+    SetReviews();
 }
 
 function SetTabSwitcher()
@@ -40,5 +42,20 @@ function SwitchTab(target)
         $(`[tab-name="${target}"]`).animate({
             opacity: 1
         }, 500)
+    })
+}
+
+function SetReviews()
+{
+    $('.review__item .show__all button').on('click', function() {
+        $('.review__item.active').css('max-height', ``);
+
+        let item = $(this).closest('.review__item');
+        let height = $(item).find('.text').height();
+        height += $(item).height();
+
+        $(item).addClass('active');        
+        $(item).css('max-height', `${height}px`)
+        console.log(height)
     })
 }

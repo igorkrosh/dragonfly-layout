@@ -137,6 +137,14 @@ header.navbar
     transition: 0.3s;
 }
 
+.title
+{
+    font-size: 46px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 section.first__scroll
 {
     background-color: #1f4b88;
@@ -436,4 +444,98 @@ section.app
         right: 20%;
     }
 }
+
+section.reviews
+{
+    padding: 40px 0;
+
+    .reviews__wrapper
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .review__item
+        {
+            width: 375px;
+            padding: 45px 35px;
+            transition: 0.5s;
+            max-height: 500px;
+            overflow: hidden;
+            border: 1px solid #d4d4d4;
+            position: relative;
+
+            .name
+            {
+                font-size: 22px;
+                font-weight: 900;
+            }
+
+            .job
+            {
+                font-size: 16px;
+                color: #9d9d9d;
+                margin-top: 10px;
+            }
+
+            .text
+            {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 30px;
+            }
+
+            .show__all
+            {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                height: 120px;
+                padding: 0 35px;
+                display: flex;
+                align-items: center;
+                background: rgb(255,255,255);
+                background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0) 100%);
+                transition: 0.5s;
+
+                button
+                {
+                    border: none;
+                    background: none;
+                    color: #2a3760;
+                    text-decoration: underline;
+                    font-size: 18px;
+                    font-family: "Akrobat";
+                    padding: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .review__item.active
+        {
+            .show__all
+            {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .text__wrapper
+    {
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        line-height: 25px;
+        padding-top: 40px;
+
+        .col
+        {
+            width: 48%;
+        }
+    }
+}
+
 @import 'responce';

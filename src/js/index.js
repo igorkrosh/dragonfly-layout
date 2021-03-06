@@ -3,8 +3,8 @@ $(document).ready(Core);
 function Core()
 {
     SetTabSwitcher();
-    console.log('asd')
     SetReviews();
+    SetMobileMenu();
 }
 
 function SetTabSwitcher()
@@ -57,5 +57,23 @@ function SetReviews()
         $(item).addClass('active');        
         $(item).css('max-height', `${height}px`)
         console.log(height)
+    })
+}
+
+function SetMobileMenu()
+{
+    $('.btn__menu').on('click', function() {
+        if ($(this).hasClass('active'))
+        {
+            $(this).removeClass('active');
+            $('.menu').removeClass('active');
+            $('body').removeClass('lock')
+        }
+        else
+        {
+            $(this).addClass('active');
+            $('.menu').addClass('active');
+            $('body').addClass('lock')
+        }
     })
 }

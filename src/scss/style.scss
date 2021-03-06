@@ -3,6 +3,7 @@ body
     margin: 0;
     color: #000;
     font-family: "Akrobat";
+    padding-top: 130px;
 }
 
 body.lock
@@ -51,9 +52,23 @@ button, input
     
 }
 
+header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 .navbar
 {
-    padding: 5px 0;
+    
+    background: #fff;
+
+    .container:first-child
+    {
+        padding: 5px 0;
+    }
     .container
     {
         display: flex;
@@ -68,6 +83,7 @@ button, input
             justify-content: space-between;
         }
     }
+
 }
 
 .btn
@@ -139,6 +155,67 @@ button, input
     background-color: #1d284d;
 }
 
+.btn__menu
+{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative;
+    transition: 0.5s;
+    background: none;
+    display: none;
+}
+
+.btn__menu:before, .btn__menu:after, .btn__menu span
+{
+    height: 2px;
+    position: absolute;
+    background: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.btn__menu span
+{
+    width: 65%;    
+}
+
+.btn__menu:before
+{
+    content: "";
+    width: 50%;
+    transform: translate(-50%, -6px);
+}
+
+.btn__menu:after
+{
+    content: "";
+    width: 50%;
+    transform: translate(-50%, 6px);
+}
+
+.btn__menu:hover:after, .btn__menu:hover:before, .btn__menu:hover span
+{
+    width: 65%;
+}
+
+.btn__menu.active span
+{
+    opacity: 0; 
+}
+
+.btn__menu.active:after
+{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.btn__menu.active:before
+{
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
 .link
 {
     font-size: 18px;
@@ -163,6 +240,7 @@ section.first__scroll
     background: url(../images/bg/map.png) #1f4b88 no-repeat;
     background-position-y: 100%;
     background-position-x: 90%;
+    background-size: contain;
     .container.row
     {
         display: flex;
@@ -647,14 +725,22 @@ footer
     }
 }
 
-.menu.desktop
+.menu
 {
-    padding: 10px 0;
+    padding: 15px 0;
     background-color: #1f4b88;
+    border-bottom: 1px solid #9b9b9b;
+    color: #fff;
+    font-size: 16px;
     .container
     {
         display: flex;
         justify-content: space-between;
+    }
+
+    .container:nth-child(2)
+    {
+        display: none;
     }
 }
 

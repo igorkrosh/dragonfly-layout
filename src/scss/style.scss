@@ -735,7 +735,7 @@ footer
     .container
     {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .container:nth-child(2)
@@ -781,6 +781,22 @@ section.contacts__info
     {
         display: flex;
         justify-content: space-evenly
+    }
+}
+
+section.about
+{
+    padding-bottom: 60px;
+    .cke__wrapper
+    {
+        font-size: 20px;
+        font-weight: 500;
+
+        i
+        {
+            display: block;
+            text-align: right;
+        }
     }
 }
 

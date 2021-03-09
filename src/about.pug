@@ -1,3 +1,5 @@
+include pug/modal.pug
+
 doctype html
 html(lang="ru")
     head
@@ -21,4 +23,5 @@ html(lang="ru")
 
 
         include pug/footer.pug
+        +Modal("modalDelivery", "ModalDelivery")
         include pug/scripts.pug

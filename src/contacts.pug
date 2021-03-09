@@ -1,3 +1,5 @@
+include pug/modal.pug
+
 doctype html
 html(lang="ru")
     head
@@ -40,4 +42,5 @@ html(lang="ru")
                         |КПП 773301001 <br>
 
         include pug/footer.pug
+        +Modal("modalDelivery", "ModalDelivery")
         include pug/scripts.pug

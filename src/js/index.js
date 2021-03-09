@@ -49,7 +49,8 @@ function SetReviews()
 {
     $('.review__item .show__all button').on('click', function() {
         $('.review__item.active').css('max-height', ``);
-
+        $('.review__item.active').removeClass('active');
+        
         let item = $(this).closest('.review__item');
         let height = $(item).find('.text').height();
         height += $(item).height();

@@ -816,4 +816,40 @@ section.about
     }
 }
 
+.modal
+{
+    .title 
+    {
+        margin-top: 0;
+    }
+}
+
+.form__wrapper
+{
+    .form__group
+    {
+        margin-bottom: 25px;
+
+        input
+        {
+            width: 100%;
+            height: 35px;
+            font-family: "Akrobat";
+            font-size: 16px;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+        input::placeholder
+        {
+            color: #5e5e5e;
+        }
+    }
+
+    .btn__wrapper
+    {
+        text-align: center;
+    }
+}
+
 @import 'responce';

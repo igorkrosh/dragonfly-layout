@@ -1,0 +1,18 @@
+mixin Modal(id, modalTemplate)
+    .modal(id=id)
+        .modal__dialog
+            button.btn__modal__close
+            .modal__content
+                +#{modalTemplate}(entry)
+
+mixin ModalDelivery
+    h1.title Заказать доставку
+    form.form__wrapper
+        .form__group
+            input(type="text" placeholder="Ваше имя")
+        .form__group
+            input(type="text" placeholder="Ваш телефон для связи")
+        .form__group
+            input(type="text" placeholder="Что отправляем")
+        .btn__wrapper
+            button.btn.orange Отправить

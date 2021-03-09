@@ -80,7 +80,12 @@ header
             display: flex;
             align-items: center;
             width: 70%;
-            justify-content: space-between;
+            justify-content: flex-end;
+
+            .contact__item
+            {
+                margin-right: 15px;
+            }
         }
     }
 
@@ -735,7 +740,12 @@ footer
     .container
     {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+
+        a
+        {
+            margin-right: 15px;
+        }
     }
 
     .container:nth-child(2)
@@ -796,6 +806,12 @@ section.about
         {
             display: block;
             text-align: right;
+            margin-bottom: 60px;
+        }
+
+        .ps
+        {
+            font-weight: 600;
         }
     }
 }

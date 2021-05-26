@@ -89,6 +89,11 @@ header
         }
     }
 
+    .link.ur
+    {
+        margin: 0 20px;
+    }
+
 }
 
 .btn
@@ -849,6 +854,141 @@ section.about
     .btn__wrapper
     {
         text-align: center;
+    }
+}
+
+.grey__text
+{
+    width: 75%;
+    margin: auto;
+    padding: 25px;
+    background: #f4f4f4;
+    margin-bottom: 40px;
+
+    p
+    {
+        text-align: center;
+        font-size: 19px
+    }
+}
+
+.subtitle
+{
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.subtitle.center
+{
+    text-align: center;
+}
+
+section.vacancies
+{
+    .btn__switch__wrapper
+    {
+        width: 55%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        button
+        {
+            min-height: 40px;
+            padding: 15px;
+            padding-left: 60px;
+            text-align: left;
+            margin-bottom: 5px;
+            font-family: "Akrobat";
+            border: none;
+            font-size: 21px;
+            background: #1f4b88;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+            position: relative;
+        }
+
+        button.active
+        {
+            color: #f37153;
+        }
+
+        button:after
+        {
+            content: '';
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: url(../images/icons/vac_wh.png);
+            transition: 0.5s;
+        }
+
+        button.active:after
+        {
+            background: url(../images/icons/vac.png);
+        }
+
+    }
+
+    .tab__viewer
+    {
+        margin-top: 60px;
+        margin-bottom: 40px;
+
+        .tab__title
+        {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.cke__wrapper
+{
+    margin-bottom: 40px;
+    h2
+    {
+        font-weight: 900;
+        font-size: 24px;
+        margin-top: 60px;
+    }
+
+    p 
+    {
+        font-size: 18px;
+        margin: 45px 0;
+    }
+
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li
+        {
+            font-size: 18px;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        li:after
+        {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #1f4b88;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            border-radius: 50%;
+        }
+
     }
 }
 

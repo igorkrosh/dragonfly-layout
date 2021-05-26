@@ -883,56 +883,60 @@ section.about
     text-align: center;
 }
 
+.btn__switch__wrapper
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    button
+    {
+        min-height: 40px;
+        padding: 15px;
+        padding-left: 60px;
+        text-align: left;
+        margin-bottom: 5px;
+        font-family: "Akrobat";
+        border: none;
+        font-size: 21px;
+        background: #1f4b88;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    button.active
+    {
+        color: #f37153;
+    }
+
+    button:after
+    {
+        content: '';
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/icons/vac_wh.png);
+        transition: 0.5s;
+    }
+
+    button.active:after
+    {
+        background: url(../images/icons/vac.png);
+    }
+
+}
+
 section.vacancies
 {
     .btn__switch__wrapper
     {
         width: 55%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-
-        button
-        {
-            min-height: 40px;
-            padding: 15px;
-            padding-left: 60px;
-            text-align: left;
-            margin-bottom: 5px;
-            font-family: "Akrobat";
-            border: none;
-            font-size: 21px;
-            background: #1f4b88;
-            color: #fff;
-            cursor: pointer;
-            transition: 0.5s;
-            position: relative;
-        }
-
-        button.active
-        {
-            color: #f37153;
-        }
-
-        button:after
-        {
-            content: '';
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            left: 15px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            background: url(../images/icons/vac_wh.png);
-            transition: 0.5s;
-        }
-
-        button.active:after
-        {
-            background: url(../images/icons/vac.png);
-        }
-
     }
 
     .tab__viewer
@@ -989,6 +993,33 @@ section.vacancies
             border-radius: 50%;
         }
 
+    }
+}
+
+section.lawyers
+{
+    width: 760px;
+    margin: auto;
+    .info
+    {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    .tab__viewer
+    {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .cke__wrapper
+    {
+        h2
+        {
+            text-align: center;
+        }
+        
     }
 }
 

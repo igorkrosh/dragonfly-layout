@@ -1,0 +1,64 @@
+include pug/modal.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        include pug/navbar.pug
+
+        section.couriers
+            .container
+                h1.title.big__pad Курьерам
+            .blue__block
+                .container
+                    .text__block
+                        h2 Работайте курьером <br> в удобное время
+                        p Станьте курьером за пару часов, зарабатывайте до 22 000 руб. в неделю. Подрабатывайте по настроению или работайте постоянно по удобному графику.
+                    img.courier(src="assets/images/bg/курьер2.png", alt="")
+        section.how__work
+            .container
+                h2.subtitle.center Как можно работать:
+                .types__wrapper
+                    .type
+                        .col__img
+                            img(src="assets/images/bg/type_work1.png", alt="")
+                        .col__text
+                            b Постоянно
+                            p Заказы подбираются автоматически. Даже если их нет, вы получаете оплату.Работа по удобному графику: 5/2, 2/2 и т. д.
+                    .type
+                        .col__text
+                            b Иногда
+                            p Вы сами себе хозяин. Берёте заказы, когда есть время и настроение. Подходит, чтобы накопить на айфон или то самое платье.
+                        .col__img
+                            img(src="assets/images/bg/type_work2.png", alt="")
+        section.steps
+            .container
+                h2.subtitle.center Как начать:
+                .pluses__wrapper
+                    .plus
+                        .image
+                            img(src="assets/images/icons/plus_1.png", alt="")
+                        .text
+                            b Регистрация
+                            span Установите приложение и зарегистрируйтесь по номеру телефона.
+                            a.btn.orange(href="download.html") Стать курьером 
+                    .plus
+                        .image
+                            img(src="assets/images/icons/plus_2.png", alt="")
+                        .text
+                            b Одобрение
+                            span Дождитесь пока документы проверят — это займёт 20 минут.
+                    .plus
+                        .image
+                            img(src="assets/images/icons/plus_3.png", alt="")
+                        .text
+                            b Добро пожаловать в команду!
+                            span Заработайте первые деньги в тот же день.
+        include pug/footer.pug
+        +Modal("modalDelivery", "ModalDelivery")
+        include pug/scripts.pug

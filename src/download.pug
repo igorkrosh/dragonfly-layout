@@ -1,0 +1,30 @@
+include pug/modal.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        include pug/navbar.pug
+
+        section.download__app
+            .container
+                h1.title.big__pad Работа курьером с ежедневной оплатой
+                .cke__wrapper
+                    p Москва, Санкт-Петербург, Краснодар, Екатеринбург, Новосибирск, Казань
+                    p При полном рабочем дне в Москве курьер получает 35-40 тысяч рублей.
+                    p Курьер с автомобилем получает 50-60 тысяч рублей.
+                h2.subtitle.center Установите приложение «DragonFlyPost» на свой смартфон:
+                .downloads__wrapper
+                    a(href="#")
+                        img(src="assets/images/icons/appstore.png", alt="") 
+                    a(href="#")
+                        img(src="assets/images/icons/googleplay.png", alt="") 
+
+        include pug/footer.pug
+        +Modal("modalDelivery", "ModalDelivery")
+        include pug/scripts.pug

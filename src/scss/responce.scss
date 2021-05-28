@@ -176,6 +176,34 @@
     {
         width: 100%;
     }
+
+    section.couriers .blue__block .container .courier
+    {
+        right: 0;
+    }
+
+    section.couriers .blue__block .container
+    {
+        background-position-x: 155%;
+    }
+
+    section.how__work .types__wrapper
+    {
+        width: 100%;
+    }
+
+    section.steps .pluses__wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .plus
+        {
+            width: 60%;
+        }
+    }
+
 }
 
 @media(max-width: 768px)
@@ -219,6 +247,16 @@
     }
 
     section.lawyers
+    {
+        width: 100%;
+    }
+
+    section.couriers .blue__block .container .courier
+    {
+        display: none;
+    }
+
+    section.couriers .text__block
     {
         width: 100%;
     }
@@ -349,5 +387,38 @@
     .menu
     {
         overflow-y: scroll;
+    }
+
+    section.how__work .types__wrapper .type:nth-child(1)
+    {
+        flex-direction: column;
+
+        .col__img
+        {
+            padding: 0;
+        }
+    }
+
+    section.how__work .types__wrapper .type:nth-child(2)
+    {
+        flex-direction: column-reverse;
+
+        .col__img
+        {
+            padding: 0;
+        }
+    }
+
+    section.how__work .types__wrapper .type
+    {
+        .col__img
+        {
+            margin-bottom: 15px;
+        }
+    }
+
+    section.steps .pluses__wrapper .plus
+    {
+        width: 100%;
     }
 }

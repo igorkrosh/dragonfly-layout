@@ -475,26 +475,27 @@ section.compensation
 section.pluses
 {
     padding: 75px 0;
-    .pluses__wrapper
+}
+
+.pluses__wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    .plus
     {
-        display: flex;
-        flex-wrap: wrap;
-        .plus
+        width: 33%;
+        padding: 0 80px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        img
         {
-            width: 33%;
-            padding: 0 80px;
-            margin-bottom: 30px;
-            text-align: center;
+            margin-bottom: 20px;
+        }
 
-            img
-            {
-                margin-bottom: 20px;
-            }
-
-            .text
-            {
-                font-size: 19px;
-            }
+        .text
+        {
+            font-size: 19px;
         }
     }
 }
@@ -1022,5 +1023,174 @@ section.lawyers
         
     }
 }
+
+.title.big__pad
+{
+    padding: 50px 0;
+}
+
+section.couriers
+{
+    .blue__block
+    {
+        background-color: #1f4b88;
+
+        .container
+        {
+            background: url(../images/bg/map.png) #1f4b88 no-repeat;
+            background-position-y: 100%;
+            background-position-x: 90%;
+            background-size: contain;
+            position: relative;
+
+            .courier
+            {
+                position: absolute;
+                right: 15%;
+                bottom: 0;
+            }
+        }
+        
+    }
+
+    .text__block
+    {
+        color: #fff;
+        width: 50%;
+        padding: 50px 0;
+        h2
+        {
+            font-weight: 900;
+            font-size: 46px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        p 
+        {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+
+section.how__work
+{
+    padding: 50px 0;
+
+    .types__wrapper
+    {
+        width: 70%;
+        margin: auto;
+        padding: 50px 0;
+
+        .type
+        {
+            display: flex;
+            align-items: center;
+
+            b 
+            {
+                font-size: 27px;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            p
+            {
+                font-size: 18px;
+            }
+        }
+
+        .type:nth-child(1)
+        {
+            .col__img
+            {
+                padding-right: 40px;
+            }
+
+            .col__text
+            {
+                text-align: left;
+            }
+        }
+
+        .type:nth-child(2)
+        {
+            .col__img
+            {
+                padding-left: 40px;
+            }
+
+            .col__text
+            {
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+section.steps
+{
+    padding-bottom: 60px;
+
+    h2
+    {
+        padding-bottom: 60px;
+    }
+    .pluses__wrapper
+    {
+        .plus
+        {
+            padding: 0px 65px;
+        }
+
+        .text
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            b 
+            {
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+
+            span
+            {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .btn.orange
+            {
+                font-size: 16px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+section.download__app
+{
+    padding-bottom: 60px;
+    .cke__wrapper
+    {
+        text-align: center;
+    }
+
+    .downloads__wrapper
+    {
+        text-align: center;
+
+        a 
+        {
+            margin: 10px;
+        }
+    }
+}
+
 
 @import 'responce';
